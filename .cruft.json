@@ -1,0 +1,25 @@
+{
+  "template": "https://github.com/statisticsnorway/ssb-pypitemplate.git",
+  "commit": "8616a596fc260e3f4e92b2dcacb536218de8c47e",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "ssb-pypitemplate-instance",
+      "package_name": "ssb_pypitemplate_instance",
+      "friendly_name": "SSB Pypitemplate Instance",
+      "copyright_owner": "Statistics Norway",
+      "copyright_year": "2023",
+      "author": "Arne Sørli",
+      "email": "arne.sorli@ssb.no",
+      "github_organization": "statisticsnorway",
+      "version": "0.0.0",
+      "license": "MIT",
+      "development_status": "Development Status :: 4 - Beta",
+      "_copy_without_render": [
+        "*.rst_t"
+      ],
+      "_template": "https://github.com/statisticsnorway/ssb-pypitemplate.git"
+    }
+  },
+  "directory": null
+}
