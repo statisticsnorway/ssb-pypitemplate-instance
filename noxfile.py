@@ -162,7 +162,8 @@ def tests(session: Session) -> None:
     session.install(".")
     session.install("coverage[toml]", "pytest", "pygments")
     try:
-        session.run("coverage", "run", "--parallel", "-m", "pytest", *session.posargs)
+        session.run("coverage", "run", "--parallel", "-m", "pytest", "-o",
+                    "pythonpath=", *session.posargs)
     finally:
         if session.interactive:
             session.notify("coverage", posargs=[])
@@ -171,7 +172,7 @@ def tests(session: Session) -> None:
 @session(python=python_versions[0])
 def coverage(session: Session) -> None:
     """Produce the coverage report."""
-    args = session.posargs or ["report"]
+    args = session.posargs or ["report", "--skip-empty"]
 
     session.install("coverage[toml]")
 
