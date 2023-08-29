@@ -21,6 +21,12 @@
 [black]: https://github.com/psf/black
 [poetry]: https://python-poetry.org/
 
+## About this package
+
+This is a test instance of
+[ssb-pypitemplate](https://github.com/statisticsnorway/ssb-pypitemplate).
+It is used just for testing, not for real use.
+
 ## Features
 
 - TODO
