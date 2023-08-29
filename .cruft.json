@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/statisticsnorway/ssb-pypitemplate.git",
-  "commit": "eabcbb1654d61201edde196f650e63392be1100c",
+  "commit": "5a20db166c7074ba56f4c983f4692df517fd6e6a",
   "checkout": null,
   "context": {
     "cookiecutter": {
