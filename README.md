@@ -5,18 +5,20 @@
 [![Python Version](https://img.shields.io/pypi/pyversions/ssb-pypitemplate-instance)][pypi status]
 [![License](https://img.shields.io/pypi/l/ssb-pypitemplate-instance)][license]
 
-[![Read the documentation at https://ssb-pypitemplate-instance.readthedocs.io/](https://img.shields.io/readthedocs/ssb-pypitemplate-instance/latest.svg?label=Read%20the%20Docs)][read the docs]
+[![Documentation](https://github.com/statisticsnorway/ssb-pypitemplate-instance/actions/workflows/docs.yml/badge.svg)][documentation]
 [![Tests](https://github.com/statisticsnorway/ssb-pypitemplate-instance/workflows/Tests/badge.svg)][tests]
-[![Codecov](https://codecov.io/gh/statisticsnorway/ssb-pypitemplate-instance/branch/main/graph/badge.svg)][codecov]
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=statisticsnorway_ssb-pypitemplate-instance&metric=coverage)][sonarcov]
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=statisticsnorway_ssb-pypitemplate-instance&metric=alert_status)][sonarquality]
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
 [![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)][poetry]
 
 [pypi status]: https://pypi.org/project/ssb-pypitemplate-instance/
-[read the docs]: https://ssb-pypitemplate-instance.readthedocs.io/
+[documentation]: https://statisticsnorway.github.io/ssb-pypitemplate-instance
 [tests]: https://github.com/statisticsnorway/ssb-pypitemplate-instance/actions?workflow=Tests
-[codecov]: https://app.codecov.io/gh/statisticsnorway/ssb-pypitemplate-instance
+[sonarcov]: https://sonarcloud.io/summary/overall?id=statisticsnorway_ssb-pypitemplate-instance
+[sonarquality]: https://sonarcloud.io/summary/overall?id=statisticsnorway_ssb-pypitemplate-instance
 [pre-commit]: https://github.com/pre-commit/pre-commit
 [black]: https://github.com/psf/black
 [poetry]: https://python-poetry.org/
@@ -45,7 +47,7 @@ $ pip install ssb-pypitemplate-instance
 
 ## Usage
 
-Please see the [Command-line Reference] for details.
+Please see the [Reference Guide] for details.
 
 ## Contributing
 
@@ -64,11 +66,11 @@ please [file an issue] along with a detailed description.
 
 ## Credits
 
-This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter] template.
+This project was generated from [Statistics Norway]'s [SSB PyPI Template].
 
-[@cjolowicz]: https://github.com/cjolowicz
+[statistics norway]: https://www.ssb.no/en
 [pypi]: https://pypi.org/
-[hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+[ssb pypi template]: https://github.com/statisticsnorway/ssb-pypitemplate
 [file an issue]: https://github.com/statisticsnorway/ssb-pypitemplate-instance/issues
 [pip]: https://pip.pypa.io/
 
@@ -76,4 +78,4 @@ This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter]
 
 [license]: https://github.com/statisticsnorway/ssb-pypitemplate-instance/blob/main/LICENSE
 [contributor guide]: https://github.com/statisticsnorway/ssb-pypitemplate-instance/blob/main/CONTRIBUTING.md
-[command-line reference]: https://ssb-pypitemplate-instance.readthedocs.io/en/latest/usage.html
+[reference guide]: https://statisticsnorway.github.io/ssb-pypitemplate-instance/reference.html
