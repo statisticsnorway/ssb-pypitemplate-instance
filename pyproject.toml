@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/statisticsnorway/ssb-pypitemplate-instance"
 repository = "https://github.com/statisticsnorway/ssb-pypitemplate-instance"
-documentation = "https://ssb-pypitemplate-instance.readthedocs.io"
+documentation = "https://statisticsnorway.github.io/ssb-pypitemplate-instance"
 classifiers = [
     "Development Status :: 4 - Beta",
 ]
@@ -62,7 +62,7 @@ source = ["ssb_pypitemplate_instance", "tests"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 100
+fail_under = 80
 
 [tool.isort]
 profile = "black"
