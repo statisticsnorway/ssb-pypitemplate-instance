@@ -5,7 +5,7 @@ from click.testing import CliRunner
 from ssb_pypitemplate_instance import __main__
 
 
-@pytest.fixture
+@pytest.fixture()
 def runner() -> CliRunner:
     """Fixture for invoking command-line interfaces."""
     return CliRunner()
