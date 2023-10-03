@@ -12,6 +12,7 @@
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
 [![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)][poetry]
 
 [pypi status]: https://pypi.org/project/ssb-pypitemplate-instance/
@@ -42,7 +43,7 @@ It is used just for testing, not for real use.
 You can install _SSB Pypitemplate Instance_ via [pip] from [PyPI]:
 
 ```console
-$ pip install ssb-pypitemplate-instance
+pip install ssb-pypitemplate-instance
 ```
 
 ## Usage
