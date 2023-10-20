@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ssb-pypitemplate-instance"
-version = "0.0.1"
+version = "0.1.0"
 description = "SSB Pypitemplate Instance"
 authors = ["Arne Sørli <arne.sorli@ssb.no>"]
 license = "MIT"
@@ -28,7 +28,6 @@ pre-commit = ">=2.16.0"
 pre-commit-hooks = ">=4.1.0"
 ruff = ">=0.0.284"
 pytest = ">=6.2.5"
-safety = ">=1.10.3"
 sphinx = ">=6.2.1"
 sphinx-autobuild = ">=2021.3.14"
 sphinx-autodoc-typehints = ">=1.24.0"
