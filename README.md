@@ -17,7 +17,7 @@
 
 [pypi status]: https://pypi.org/project/ssb-pypitemplate-instance/
 [documentation]: https://statisticsnorway.github.io/ssb-pypitemplate-instance
-[tests]: https://github.com/statisticsnorway/ssb-pypitemplate-instance/actions?workflow=Tests
+[tests]: https://github.com/statisticsnorway/ssb-pypitemplate-instance/actions/workflows/tests.yml/badge.svg
 [sonarcov]: https://sonarcloud.io/summary/overall?id=statisticsnorway_ssb-pypitemplate-instance
 [sonarquality]: https://sonarcloud.io/summary/overall?id=statisticsnorway_ssb-pypitemplate-instance
 [pre-commit]: https://github.com/pre-commit/pre-commit
