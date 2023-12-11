@@ -13,7 +13,7 @@ Here is a list of important resources for contributors:
 
 [mit license]: https://opensource.org/licenses/MIT
 [source code]: https://github.com/statisticsnorway/ssb-pypitemplate-instance
-[documentation]: https://ssb-pypitemplate-instance.readthedocs.io/
+[documentation]: https://statisticsnorway.github.io/ssb-pypitemplate-instance
 [issue tracker]: https://github.com/statisticsnorway/ssb-pypitemplate-instance/issues
 
 ## How to report a bug
