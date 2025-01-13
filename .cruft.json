@@ -1,7 +1,7 @@
 {
   "template": "https://github.com/statisticsnorway/ssb-pypitemplate.git",
-  "commit": "364d8a1371f3eefd7228f0189126db6ba96e76ee",
-  "checkout": "2024.11.26",
+  "commit": "de6d884fe54fd885ef1ad1302695d3d4cf90a997",
+  "checkout": null,
   "context": {
     "cookiecutter": {
       "project_name": "ssb-pypitemplate-instance",
