@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ssb-pypitemplate-instance"
-version = "0.1.2"
+version = "0.2.0"
 description = "SSB Pypitemplate Instance"
 authors = ["Arne Sørli <arne.sorli@ssb.no>"]
 license = "MIT"
