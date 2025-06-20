@@ -3,6 +3,7 @@ name = "ssb-pypitemplate-instance"
 version = "0.2.0"
 description = "SSB Pypitemplate Instance"
 authors = ["Arne Sørli <arne.sorli@ssb.no>"]
+maintainers = ["Section 703, Statistics Norway"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/statisticsnorway/ssb-pypitemplate-instance"
