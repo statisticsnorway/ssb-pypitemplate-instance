@@ -16,7 +16,7 @@
       "license": "MIT",
       "development_status": "Development Status :: 4 - Beta",
       "code_quality_level": "High",
-      "department_number": "",
+      "department_number": "703",
       "_copy_without_render": [
         "*.rst_t"
       ],

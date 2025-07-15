@@ -11,6 +11,7 @@ requires-python = ">=3.10,<4.0"
 dependencies = [
     "click (>=8.0.1)"
 ]
+maintainers = [{name = "Statistics Norway, IT-partner Department (703)"}]
 
 [project.urls]
 homepage = "https://github.com/statisticsnorway/ssb-pypitemplate-instance"
