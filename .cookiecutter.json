@@ -1,5 +1,5 @@
 {
-  "_commit": "0d33fca0d1c29c79aef9c7053e36d9e7cdd2bd20",
+  "_commit": "3871b357954aa7881ef1816f0b56b101a0cab3f9",
   "_copy_without_render": [
     "*.rst_t"
   ],
@@ -12,6 +12,7 @@
   "code_quality_level": "High",
   "copyright_owner": "Statistics Norway",
   "copyright_year": "2023",
+  "department_number": "",
   "development_status": "Development Status :: 4 - Beta",
   "email": "arne.sorli@ssb.no",
   "friendly_name": "SSB Pypitemplate Instance",
