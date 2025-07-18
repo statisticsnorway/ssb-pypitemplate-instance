@@ -2,15 +2,15 @@
 name = "ssb-pypitemplate-instance"
 version = "0.3.0"
 description = "SSB Pypitemplate Instance"
-authors = [{name = "Arne Sørli", email = "arne.sorli@ssb.no"}]
+authors = [{ name = "Arne Sørli", email = "arne.sorli@ssb.no" }]
+maintainers = [{ name = "Statistics Norway, IT-partner Department (703)" }]
 license = "MIT"
 readme = "README.md"
-dynamic = ["classifiers"]
 requires-python = ">=3.10,<4.0"
+dynamic = ["classifiers"]
 dependencies = [
-    "click (>=8.0.1)"
+    "click>=8.0.1",
 ]
-maintainers = [{name = "Statistics Norway, IT-partner Department (703)"}]
 
 [project.urls]
 homepage = "https://github.com/statisticsnorway/ssb-pypitemplate-instance"
