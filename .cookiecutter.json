@@ -13,7 +13,7 @@
   "copyright_owner": "Statistics Norway",
   "copyright_year": "2023",
   "department_number": "703",
-  "dependency_manager_tool": "poetry",
+  "dependency_manager_tool": "uv",
   "development_status": "Development Status :: 4 - Beta",
   "email": "arne.sorli@ssb.no",
   "friendly_name": "SSB Pypitemplate Instance",
