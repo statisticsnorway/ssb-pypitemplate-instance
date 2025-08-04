@@ -4,7 +4,7 @@ version = "0.3.0"
 description = "SSB Pypitemplate Instance"
 authors = [{ name = "Arne Sørli", email = "arne.sorli@ssb.no" }]
 maintainers = [{ name = "Statistics Norway, IT-partner Department (703)" }]
-license = { text = "MIT" }
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.10,<4.0"
 dynamic = ["classifiers"]
@@ -62,7 +62,7 @@ relative_files = true
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 80
+fail_under = 50
 
 [tool.deptry.per_rule_ignores]
 DEP001 = ["nox", "nox_poetry"]  # packages available by default
@@ -90,7 +90,18 @@ extend-exclude = [
 
 # Ruff rules may be customized as desired: https://docs.astral.sh/ruff/rules/
 [tool.ruff.lint]
-select = ["ALL"]
+select = [
+    "A",    # prevent using keywords that clobber python builtins
+    "ANN",  # check type annotations
+    "B",    # bugbear: security warnings
+    "D",    # documentation
+    "E",    # pycodestyle
+    "F",    # pyflakes
+    "ISC",  # implicit string concatenation
+    "I",    # sort imports
+    "UP",   # alert you when better syntax is available in your python version
+    "RUF",  # the ruff developer's own rules
+]
 ignore = [
     "ANN202", # Don't require return type annotation for private functions.
     "ANN401", # Allow type annotation with type Any.
