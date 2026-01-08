@@ -14,7 +14,7 @@ from nox import Session
 package = "ssb_pypitemplate_instance"
 python_versions = ["3.11", "3.12", "3.13"]
 python_versions_for_test = python_versions + ["3.10"]
-nox.needs_version = ">= 2021.6.6"
+nox.needs_version = ">= 2025.2.9"
 nox.options.sessions = (
     "pre-commit",
     "mypy",
@@ -30,7 +30,7 @@ session = nox.session
 def install_with_uv(
     session: Session,
     *,
-    only_dev: bool = False,
+    only_groups: list[str] | None = None,
     all_extras: bool = False,
     locked: bool = True,
 ) -> None:
@@ -38,8 +38,10 @@ def install_with_uv(
     cmd = ["uv", "sync"]
     if locked:
         cmd.append("--locked")
-    if only_dev:
-        cmd.append("--only-dev")
+    if only_groups:
+        groups = only_groups or []  # if only_groups is None or empty, groups becomes []
+        for group in groups:
+            cmd.extend(["--only-group", group])
     if all_extras:
         cmd.append("--all-extras")
     cmd.append(
@@ -142,7 +144,7 @@ def precommit(session: Session) -> None:
         "--hook-stage=manual",
         "--show-diff-on-failure",
     ]
-    install_with_uv(session, only_dev=True)
+    install_with_uv(session, only_groups=["lint"])
     session.run("pre-commit", *args)
     if args and args[0] == "install":
         activate_virtualenv_in_precommit_hooks(session)
@@ -182,9 +184,7 @@ def tests(session: Session) -> None:
 def coverage(session: Session) -> None:
     """Produce the coverage report."""
     args = session.posargs or ["report", "--skip-empty"]
-
     install_with_uv(session)
-
     if not session.posargs and any(Path().glob(".coverage.*")):
         session.run("coverage", "combine")
 
@@ -219,7 +219,7 @@ def docs_build(session: Session) -> None:
     if not session.posargs and "FORCE_COLOR" in os.environ:
         args.insert(0, "--color")
 
-    install_with_uv(session, only_dev=True)
+    install_with_uv(session, only_groups=["doc"])
 
     build_dir = Path("docs", "_build")
     if build_dir.exists():
@@ -232,7 +232,7 @@ def docs_build(session: Session) -> None:
 def docs(session: Session) -> None:
     """Build and serve the documentation with live reloading on file changes."""
     args = session.posargs or ["--open-browser", "docs", "docs/_build"]
-    install_with_uv(session, only_dev=True)
+    install_with_uv(session, only_groups=["doc"])
 
     build_dir = Path("docs", "_build")
     if build_dir.exists():
