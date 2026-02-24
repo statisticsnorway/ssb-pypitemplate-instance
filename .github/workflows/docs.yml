@@ -40,7 +40,7 @@ jobs:
         with:
           enable-cache: true
           version: ${{ steps.uv-version.outputs.version }}
-          python-version: "3.12"
+          python-version: "3.13"
 
       - name: Install dependencies
         run: |
